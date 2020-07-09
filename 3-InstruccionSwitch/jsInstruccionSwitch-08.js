@@ -1,6 +1,15 @@
-function mostrar()
-{
-	var destinoIngresado =txtIdDestino.value;
-	alert(destinoIngresado);
+/* Al seleccionar un destino informar si hace FRIO o CALOR en ese destino */
 
-}//FIN DE LA FUNCIÓN
+function mostrar() {
+  var destinoIngresado = txtIdDestino.value;
+  switch (destinoIngresado) {
+    case "Cataratas":
+      alert("Aquí hace calor todo el año");
+      break;
+    case "Mar del plata":
+      alert("En esta epoca del año hace frio!!");
+      break;
+    default:
+      alert("Hace frio!!!");
+  }
+} //FIN DE LA FUNCIÓN
