@@ -1,30 +1,23 @@
-var miTemporizador ;
-var contador=0;
+/* Luego de presiona el botón 'Iniciar',se dispará un temporizador de una funcion que haga visible el botó "el oculto". */
+
+var intervalo;
 var tiempoInicio;
 var tiempoFinal;
+var duracion;
 
+function inicio() {
+  tiempoInicio = new Date();
+  tiempoInicio = tiempoInicio.getTime();
+  intervalo = setTimeout(Comienzo, 2000);
+}
+function Comienzo() {
+  document.getElementById("secreto").style.visibility = "visible";
+  Finalizar();
+}
+function Finalizar() {
+  tiempoFinal = new Date();
+  tiempoFinal = tiempoFinal.getTime();
 
-function inicio()
-{
-	document.getElementById("secreto").style.visibility="hidden";
-	alert("function inicio.");
-	miTemporizador = setTimeout(SegundosEnElAire, 3000);
-	
-}//FIN DE LA FUNCIÓN inicio
-
-function SegundosEnElAire() {
-
-
-	document.getElementById("secreto").style.visibility="visible"; 
- 	tiempoInicio=  new Date();
- 	tiempoInicio=tiempoInicio.getTime();
- 	alert(tiempoInicio);
-   
-}//FIN DE LA FUNCIÓN SegundosEnElAire
-
-function fin()
-{
-	tiempoFinal= new Date();
-	tiempoFinal=tiempoFinal.getTime();
-	alert(tiempoFinal-tiempoInicio);
-}//FIN DE LA FUNCIÓN fin
+  duracion = tiempoFinal - tiempoInicio;
+  alert(`Tardó ${duracion} mls en aparecer nuevamente`);
+}

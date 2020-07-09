@@ -1,24 +1,9 @@
-var miTemporizador ;
-var contador=0;
+/* Luego de presiona el botón 'Iniciar', se ocultara el botón "el oculto". Después de 3(tres) segundo será visible nuevamente. */
 
-function inicio()
-{
-	document.getElementById("secreto").style.visibility="hidden";
-	alert("function inicio.");
-	miTemporizador = setTimeout(SegundosEnElAire, 3000);
-	
-}//FIN DE LA FUNCIÓN inicio
+function inicio() {
+  document.getElementById("secreto").style.visibility = "hidden";
 
-function SegundosEnElAire() {
-
-	document.getElementById("secreto").style.visibility="visible"; 
-    alert("Bienvenido a la UTN FRA");
-   
-}//FIN DE LA FUNCIÓN SegundosEnElAire
-
-function fin()
-{
-	alert("function fin.");
-	clearTimeout(miIntervalo);
-
-}//FIN DE LA FUNCIÓN fin
+  setTimeout(() => {
+    document.getElementById("secreto").style.visibility = "visible";
+  }, 3000);
+}
