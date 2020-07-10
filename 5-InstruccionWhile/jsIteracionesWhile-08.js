@@ -1,19 +1,24 @@
 /*
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 sumar los que son positivos y multiplicar los negativos.*/
-function mostrar()
-{
-	var contador;
-	var respuesta;
-	var sumaPositivos;
-	var multiplicacionNegativos;
-	contador=0;
-	sumaPositivos=0;
-	multiplicacionNegativos=1;
-	respuesta='si';
-
-
-	txtIdSuma.value=sumaPositivos;
-	txtIdProducto.value=multiplicacionNegativos;
-
-}//FIN DE LA FUNCIÓN
+function mostrar() {
+  var num;
+  var seguir = "si";
+  var positivos = 0;
+  var negativos = 1;
+  while (seguir == "si") {
+    num = parseInt(prompt("Ingrese un numero negativo o positivo"));
+    /* Validamos que sea un numero */
+    while (isNaN(num)) {
+      num = parseInt(prompt("ERROR! Solamente se permiten numeros"));
+    }
+    if (num > 0) {
+      positivos += num;
+    } else {
+      negativos *= num;
+    }
+    seguir = prompt("Desea continuar? Escriba si ó no");
+  }
+  txtIdSuma.value = positivos;
+  txtIdProducto.value = negativos;
+} //FIN DE LA FUNCIÓN
