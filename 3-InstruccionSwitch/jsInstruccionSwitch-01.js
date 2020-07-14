@@ -5,7 +5,8 @@ si es Julio: "se vienen las vacaciones!!!."
 si es Diciembre: "Felices fiesta!!!." */
 
 function mostrar() {
-  var mesDelAnio = txtIdMes.value;
+  var mesDelAnio;
+  mesDelAnio = txtIdMes.value;
   switch (mesDelAnio) {
     case "Enero":
       alert("Que comiences bien el año!!");

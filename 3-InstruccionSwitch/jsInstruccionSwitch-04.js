@@ -3,7 +3,8 @@ si tiene 28 días.
 si tiene 30 días.
 si tiene 31 días. */
 function mostrar() {
-  var mesDelAnio = txtIdMes.value;
+  var mesDelAnio;
+  mesDelAnio = txtIdMes.value;
   switch (true) {
     case mesDelAnio == "Febrero":
       alert("Tiene 28 días");

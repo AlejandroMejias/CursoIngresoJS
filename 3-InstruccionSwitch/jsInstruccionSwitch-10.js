@@ -9,8 +9,10 @@ en Otoño: Se viaja a todos los destinos.
 primavera: solo no se viaja a Bariloche */
 
 function mostrar() {
-  var estacionIngresada = txtIdEstacion.value;
-  var destino = txtIdDestino.value;
+  var estacionIngresada;
+  var destino;
+  estacionIngresada = txtIdEstacion.value;
+  destino = txtIdDestino.value;
   switch (estacionIngresada) {
     case "Invierno":
       if (destino == "Bariloche") {

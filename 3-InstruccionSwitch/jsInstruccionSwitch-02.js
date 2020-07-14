@@ -5,7 +5,8 @@ si ya paso el Invierno: "Ya pasamos el frio, ahora calor!!!."
 ACLARAcIÓN: tomamos a Julio y Agosto como los meses de Invierno. */
 
 function mostrar() {
-  var mesDelAnio = txtIdMes.value;
+  var mesDelAnio;
+  mesDelAnio = txtIdMes.value;
   switch (true) {
     case mesDelAnio == "Julio" || mesDelAnio == "Agosto":
       alert("Abrigate que hace frio!!");

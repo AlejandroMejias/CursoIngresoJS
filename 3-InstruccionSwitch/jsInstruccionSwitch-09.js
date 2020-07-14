@@ -7,10 +7,14 @@ en Verano: bariloche tiene un descuento del 20% cataratas y Cordoba tiene un aum
 en Otoño y Primavera: bariloche tiene un aumento del 10% cataratas tiene un aumento del 10% Mar del plata tiene un aumento del 10% y Cordoba tiene el precio sin descuento */
 
 function mostrar() {
-  var estacionIngresada = txtIdEstacion.value;
-  var destino = txtIdDestino.value;
-  var costo = 15000;
+  var estacionIngresada;
+  var destino;
+  var costo;
   var result;
+  estacionIngresada = txtIdEstacion.value;
+  destino = txtIdDestino.value;
+  costo = 15000;
+ 
 
   switch (estacionIngresada) {
     case "Invierno":

@@ -4,7 +4,8 @@ si está entre las 12 y las 19 : "Es de tarde.".
 si está entre las 20 y las 24 o entre las 0 y las 6 : "Es de noche.".
 si NO está entre las 0 y las 24 : "la hora no existe.". */
 function mostrar() {
-  var horaDelDia = txtIdHora.value;
+  var horaDelDia;
+  horaDelDia = txtIdHora.value;
   switch (true) {
     case horaDelDia > 6 && horaDelDia < 12:
       alert("Es de mañana!!");
