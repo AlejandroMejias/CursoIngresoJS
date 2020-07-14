@@ -3,7 +3,8 @@
 "APROBÓ" para notas mayores a 4,
 "Vamos, la proxima se puede" para notas menores a 4 */
 function mostrar() {
-  var nota = Math.floor(Math.random() * 10 + 1);
+  var nota;
+  nota = Math.floor(Math.random() * 10 + 1);
   if (nota >= 9) {
     alert("EXCELENTE CALIFICACION!!!");
   } else if (nota < 4) {
