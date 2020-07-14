@@ -3,9 +3,14 @@ Al presionar el botón pedir  números  hasta que el usuario quiera,
 sumar los que son positivos y multiplicar los negativos.*/
 function mostrar() {
   var num;
-  var seguir = "si";
-  var positivos = 0;
-  var negativos = 1;
+  var seguir;
+  var positivos;
+  var negativos;
+
+  seguir = "si";
+  positivos = 0;
+  negativos = 1;
+  
   while (seguir == "si") {
     num = parseInt(prompt("Ingrese un numero negativo o positivo"));
     /* Validamos que sea un numero */

@@ -4,10 +4,15 @@ e informar la suma acumulada y el promedio.
 */
 function mostrar() {
   var num;
-  var seguir = true;
-  var sumaNum = 0;
-  var contadorNum = 0;
+  var seguir;
+  var sumaNum;
+  var contadorNum;
   var promedioNum;
+
+  seguir = true;
+  sumaNum = 0;
+  contadorNum = 0;
+  
   while (seguir) {
     num = parseInt(prompt("Ingresa un numero"));
     /* Validamos dicho numero ingresado */

@@ -1,9 +1,13 @@
 /* Al presionar el botón pedir 5 números e informar la suma acumulada y el promedio. */
 function mostrar() {
   var num;
-  var sumaNum = 0;
-  var contador = 0;
+  var sumaNum;
   var promedioNum;
+  var contador;
+
+  sumaNum = 0;
+  contador = 0;
+  
   while (contador < 5) {
     contador++;
     num = parseInt(prompt("Ingrese numeros para calcular el promedio de los mismos"));

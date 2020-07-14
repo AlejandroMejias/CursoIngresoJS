@@ -3,10 +3,15 @@ Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar() {
   var num;
-  var contador = 0;
-  var numeroMax = 0;
-  var numeroMin = 0;
-  var seguir = true;
+  var contador;
+  var numeroMax;
+  var numeroMin;
+  var seguir;
+  
+  contador = 0;
+  numeroMax = 0;
+  numeroMin = 0;
+  seguir = true;
 
   do {
     contador++;

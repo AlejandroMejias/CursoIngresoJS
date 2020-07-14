@@ -12,16 +12,24 @@ hasta que el usuario quiera, mostrar:
 9-Diferencia entre positivos y negativos, (positvos-negativos). */
 function mostrar() {
 	var num;
-	var sumaPositivos = 0;
-	var contadorPositivos = 0;
+	var sumaPositivos;
+	var contadorPositivos;
 	var promedioPositivos;
-	var ceros = 0;
-	var numerosPares = 0;
-	var sumaNegativos = 0;
-	var contadorNegativos = 0;
+	var ceros;
+	var numerosPares;
+	var sumaNegativos;
+	var contadorNegativos;
 	var promedioNegativos;
 	var diferenciaPyN;
-	var seguir = true;
+	var seguir;
+
+	sumaPositivos = 0;
+	contadorPositivos = 0;
+	ceros = 0;
+	numerosPares = 0;
+	sumaNegativos = 0;
+	contadorNegativos = 0;
+	seguir = true;
 
 	do{
 		num = parseInt(prompt("Ingrese un numero positivo o negativo"));
@@ -59,6 +67,6 @@ function mostrar() {
 	document.write(`Numeros pares: ${numerosPares}<br>`);
 	document.write(`Promedio de positivos: ${promedioPositivos}<br>`);
 	document.write(`Promedio de negativos: ${promedioNegativos}<br>`);
-	document.write(`Diferencia entre positivos y negativos: <strong>${diferenciaPyN}</strong><br>`);
+	document.write(`Diferencia entre positivos y negativos: <strong>${diferenciaPyN}</strong>`);
 } //FIN DE LA FUNCIÓN
 
