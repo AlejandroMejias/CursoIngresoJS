@@ -3,7 +3,9 @@
 function mostrar() {
   var num;
   var Divisor = 0;
+
   num = prompt("Ingrese un numero para determinar si es PRIMO o no");
+  
   for (let i = 2; i <= num; i++) {
     /* Buscamos la cantidad de divisiones */
     if (num % i == 0) {

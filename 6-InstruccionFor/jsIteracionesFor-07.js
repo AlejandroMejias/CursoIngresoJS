@@ -3,7 +3,9 @@
 function mostrar() {
   var num;
   var cantidadDivisores = 0;
+
   num = prompt("Ingrese un numero");
+  
   for (let i = 1; i <= num; i++) {
     /* Buscamos los numeros divisores  */
     if (num % i == 0) {

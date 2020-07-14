@@ -3,7 +3,9 @@
 function mostrar() {
   var num;
   var CantidadPares = 0;
+
   num = prompt("Ingrese un numero");
+  
   for (let i = 1; i <= num; i++) {
     /* Imprimimos los numeros pares */
     if (i % 2 == 0) {
