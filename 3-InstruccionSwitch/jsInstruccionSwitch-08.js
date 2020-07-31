@@ -1,9 +1,12 @@
 /* Al seleccionar un destino informar si hace FRIO o CALOR en ese destino */
 
-function mostrar() {
+function mostrar()
+{
   var destinoIngresado;
   destinoIngresado = txtIdDestino.value;
-  switch (destinoIngresado) {
+
+  switch (destinoIngresado)
+  {
     case "Cataratas":
       alert("Aquí hace calor todo el año");
       break;

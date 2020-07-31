@@ -4,10 +4,13 @@ si es Marzo: "a clases!!!."
 si es Julio: "se vienen las vacaciones!!!."
 si es Diciembre: "Felices fiesta!!!." */
 
-function mostrar() {
+function mostrar()
+{
   var mesDelAnio;
   mesDelAnio = txtIdMes.value;
-  switch (mesDelAnio) {
+
+  switch (mesDelAnio)
+  {
     case "Enero":
       alert("Que comiences bien el año!!");
       break;

@@ -8,34 +8,49 @@ en Otoño: Se viaja a todos los destinos.
 
 primavera: solo no se viaja a Bariloche */
 
-function mostrar() {
+function mostrar()
+{
   var estacionIngresada;
   var destino;
+  var mensaje;
   estacionIngresada = txtIdEstacion.value;
   destino = txtIdDestino.value;
-  switch (estacionIngresada) {
+
+  switch (estacionIngresada)
+  {
     case "Invierno":
-      if (destino == "Bariloche") {
-        alert(`A ${destino} se viaja!!`);
-      } else {
-        alert(`Lo lamento, no es posible viajar a ${destino} en estos momentos`);
+      switch(destino)
+      {
+        case "Bariloche":
+          mensaje = `Se viaja!!`;
+          break;
+        default:
+          mensaje = `No se viaja!!`;
       }
       break;
     case "Verano":
-      if (destino == "Mar del plata" || destino == "Cataratas") {
-        alert(`A ${destino} se viaja!!!`);
-      } else {
-        alert(`Lo lamento, no es posible viajar a ${destino} en estos momentos`);
-	  }
-	  break;
+      switch(destino)
+      {
+        case "Cataratas":
+        case "Mar del plata":
+          mensaje = `Se viaja!!`;
+          break;
+        default:
+          mensaje = `No se viaja!!`;
+      }
+      break;
     case "Primavera":
-      if (destino != "Bariloche") {
-        alert(`A ${destino} se viaja!!`);
-      } else {
-        alert(`Lo lamento, no es posible viajar a ${destino} en estos momentos`);
+      switch(destino)
+      {
+        case "Bariloche":
+          mensaje = `No se viaja!!`;
+          break;
+        default:
+          mensaje = `Se viaja!!`;
       }
       break;
     default:
-      alert(`Se puede viajar a ${destino} en ${estacionIngresada}`);
+      mensaje = `Se viaja!!`;
   }
+  alert(`A ${destino}...${mensaje}!!`);
 } //FIN DE LA FUNCIÓN
