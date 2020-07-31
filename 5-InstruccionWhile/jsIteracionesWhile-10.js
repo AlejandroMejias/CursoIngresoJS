@@ -10,7 +10,8 @@ hasta que el usuario quiera, mostrar:
 7-Promedio de positivos.
 8-Promedios de negativos.
 9-Diferencia entre positivos y negativos, (positvos-negativos). */
-function mostrar() {
+function mostrar()
+{
 	var num;
 	var sumaPositivos;
 	var contadorPositivos;
@@ -31,28 +32,42 @@ function mostrar() {
 	contadorNegativos = 0;
 	seguir = true;
 
-	do{
+	do
+	{
 		num = parseInt(prompt("Ingrese un numero positivo o negativo"));
 		/* Validamos el ingreso */
-		while(isNaN(num)) {
+		
+		while(isNaN(num))
+		{
 			num = parseInt(prompt("ERROR! Debe ingresar numeros solamente"));
 		}
 		/* Positivos , negativos y ceros */
-		if(num > 0) {
+		if(num > 0)
+		{
 			sumaPositivos += num;
 			contadorPositivos++;
-		}else if(num < 0) {
-			sumaNegativos += num;
-			contadorNegativos++;
-		}else{
-			ceros++;
 		}
+		else
+		{
+			if(num < 0)
+			{
+				sumaNegativos += num;
+				contadorNegativos++;
+			}
+			else
+			{
+				ceros++;
+			}
+		}
+		
 		/* Numeros pares */
-		if(num % 2 == 0) {
+		if(num % 2 == 0)
+		{
 			numerosPares++;
 		}
 		seguir = confirm("Deseas continuar?");
 	}while(seguir);
+	
 	promedioNegativos = sumaNegativos / contadorNegativos;
 	promedioNegativos = promedioNegativos.toFixed(1);
 	promedioPositivos = sumaPositivos / contadorPositivos;

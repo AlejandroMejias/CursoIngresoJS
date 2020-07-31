@@ -1,7 +1,8 @@
 /*
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
-function mostrar() {
+function mostrar()
+{
   var num;
   var contador;
   var numeroMax;
@@ -13,25 +14,33 @@ function mostrar() {
   numeroMin = 0;
   seguir = true;
 
-  do {
+  do
+  {
     contador++;
     num = parseInt(prompt("Ingrese un numero positivo o negativo"));
+
     /* Validamos el numero ingresado */
-    while (isNaN(num)) {
+    while (isNaN(num))
+    {
       num = parseInt(prompt("ERROR! Debes ingresar numeros unicamente"));
     }
-    if (contador == 1) {
+    if (contador == 1)
+    {
       numeroMax = num;
       numeroMin = num;
     }
     /* Buscamos el maximo o el minimo */
-    if (num > numeroMax) {
+
+    if (num > numeroMax)
+    {
       numeroMax = num;
-    } else if (num < numeroMin) {
+    }
+    if (num < numeroMin)
+    {
       numeroMin = num;
     }
     seguir = confirm("Deseas continuar?");
-  } while (seguir);
+  }while(seguir);
   txtIdMaximo.value = numeroMax;
   txtIdMinimo.value = numeroMin;
 } //FIN DE LA FUNCIÓN

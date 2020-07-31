@@ -1,13 +1,14 @@
 /*
 al presionar el botón pedir la CLAVE (ayuda: es utn750)*/
-function mostrar() {
+function mostrar()
+{
   var clave;
   clave = prompt("Ingrese su contraseña para ingresar");
 
-  while (clave != "utn750") {
+  while (clave != "utn750")
+  {
     clave = prompt("La clave es incorrecta, vuelve a intentarlo");
   }
-  if(clave == "utn750") {
-	  alert(" Welcome a UTN™ ");
-  }
+	alert(" Welcome a UTN™ ");
+  
 } //FIN DE LA FUNCIÓN

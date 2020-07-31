@@ -1,7 +1,8 @@
 /*
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 sumar los que son positivos y multiplicar los negativos.*/
-function mostrar() {
+function mostrar()
+{
   var num;
   var seguir;
   var positivos;
@@ -10,16 +11,22 @@ function mostrar() {
   seguir = "si";
   positivos = 0;
   negativos = 1;
-  
-  while (seguir == "si") {
+
+  while (seguir == "si")
+  {
     num = parseInt(prompt("Ingrese un numero negativo o positivo"));
     /* Validamos que sea un numero */
-    while (isNaN(num)) {
+    
+    while (isNaN(num))
+    {
       num = parseInt(prompt("ERROR! Solamente se permiten numeros"));
     }
-    if (num > 0) {
+    if (num > 0)
+    {
       positivos += num;
-    } else {
+    }
+    else
+    {
       negativos *= num;
     }
     seguir = prompt("Desea continuar? Escriba si ó no");

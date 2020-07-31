@@ -2,7 +2,8 @@
 Al presionar el botón pedir  números  hasta que el USUARIO QUIERA 
 e informar la suma acumulada y el promedio.
 */
-function mostrar() {
+function mostrar()
+{
   var num;
   var seguir;
   var sumaNum;
@@ -13,10 +14,12 @@ function mostrar() {
   sumaNum = 0;
   contadorNum = 0;
   
-  while (seguir) {
+  while (seguir)
+  {
     num = parseInt(prompt("Ingresa un numero"));
     /* Validamos dicho numero ingresado */
-    while (isNaN(num)) {
+    while (isNaN(num))
+    {
       num = parseInt(prompt("ERROR! Se permite solo numeros"));
     }
     sumaNum += num;
